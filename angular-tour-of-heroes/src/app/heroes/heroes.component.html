@@ -1,4 +1,7 @@
 <h2>My Heroes</h2>
+ feature/#4_make-HeroDetailComponent
+
+ master
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
@@ -6,6 +9,9 @@
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
+
+ feature/#4_make-HeroDetailComponent
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
 <div *ngIf="selectedHero">
 
@@ -18,3 +24,4 @@
   </div>
 
 </div>
+ master
